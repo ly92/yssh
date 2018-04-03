@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GotoActivityController">
+            <connections>
+                <outlet property="selectActivityLbl" destination="hSy-u9-SK7" id="v8S-zG-8Gk"/>
+                <outlet property="selectCommunityLbl" destination="HZs-9D-u3O" id="jIP-EE-3bj"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="选择您要参加活动的小区" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hKU-hq-mk5">
+                    <rect key="frame" x="10" y="10" width="300" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="k8g-Vm-34h"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="选择您要参加的活动" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b9i-Rm-uxH">
+                    <rect key="frame" x="10" y="91" width="300" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="TUK-zY-rNQ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kwK-0n-X13">
+                    <rect key="frame" x="0.0" y="41" width="320" height="40"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="repari_require" translatesAutoresizingMaskIntoConstraints="NO" id="gzK-ie-3e2">
+                            <rect key="frame" x="304" y="18" width="6" height="6"/>
+                            <gestureRecognizers/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="6" id="cde-l5-Jdd"/>
+                                <constraint firstAttribute="height" constant="6" id="v30-w3-bOI"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow_right" translatesAutoresizingMaskIntoConstraints="NO" id="2n1-fY-xQX">
+                            <rect key="frame" x="282" y="12" width="12" height="15"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="15" id="Ifs-Po-jHk"/>
+                                <constraint firstAttribute="width" constant="12" id="dbe-o8-4Se"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请选择小区" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HZs-9D-u3O">
+                            <rect key="frame" x="10" y="10" width="262" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="fDk-28-6Jh"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstItem="HZs-9D-u3O" firstAttribute="top" secondItem="kwK-0n-X13" secondAttribute="top" constant="10" id="1gR-lf-SMF"/>
+                        <constraint firstItem="gzK-ie-3e2" firstAttribute="leading" secondItem="2n1-fY-xQX" secondAttribute="trailing" constant="10" id="DwH-e4-OFp"/>
+                        <constraint firstItem="2n1-fY-xQX" firstAttribute="leading" secondItem="HZs-9D-u3O" secondAttribute="trailing" constant="10" id="EYP-lg-ySA"/>
+                        <constraint firstAttribute="height" constant="40" id="SY9-uP-VkT"/>
+                        <constraint firstAttribute="trailing" secondItem="gzK-ie-3e2" secondAttribute="trailing" constant="10" id="Sdp-5W-qDU"/>
+                        <constraint firstItem="HZs-9D-u3O" firstAttribute="leading" secondItem="kwK-0n-X13" secondAttribute="leading" constant="10" id="V8M-rp-aFN"/>
+                        <constraint firstItem="2n1-fY-xQX" firstAttribute="top" secondItem="kwK-0n-X13" secondAttribute="top" constant="12" id="WWJ-6R-B2V"/>
+                        <constraint firstItem="gzK-ie-3e2" firstAttribute="top" secondItem="kwK-0n-X13" secondAttribute="top" constant="18" id="cRs-s5-gxn"/>
+                    </constraints>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="EFe-8J-gve" appends="YES" id="PKm-JF-iPY"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lKs-ry-MAi">
+                    <rect key="frame" x="0.0" y="121" width="320" height="40"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="repari_require" translatesAutoresizingMaskIntoConstraints="NO" id="aY0-R6-j4a">
+                            <rect key="frame" x="304" y="17" width="6" height="6"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="6" id="2Hh-l8-4FI"/>
+                                <constraint firstAttribute="width" constant="6" id="Gfv-Co-dgQ"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow_right" translatesAutoresizingMaskIntoConstraints="NO" id="TkW-k9-l3U">
+                            <rect key="frame" x="282" y="12" width="12" height="15"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="12" id="8XX-Hf-UrT"/>
+                                <constraint firstAttribute="height" constant="15" id="AYO-Zn-DIm"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请选择活动" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hSy-u9-SK7">
+                            <rect key="frame" x="10" y="10" width="262" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="JXy-bn-H1C"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstItem="aY0-R6-j4a" firstAttribute="leading" secondItem="TkW-k9-l3U" secondAttribute="trailing" constant="10" id="Emf-Xw-fND"/>
+                        <constraint firstAttribute="trailing" secondItem="aY0-R6-j4a" secondAttribute="trailing" constant="10" id="H2D-Oi-X2Q"/>
+                        <constraint firstItem="hSy-u9-SK7" firstAttribute="top" secondItem="lKs-ry-MAi" secondAttribute="top" constant="10" id="OzA-NU-dOk"/>
+                        <constraint firstItem="hSy-u9-SK7" firstAttribute="leading" secondItem="lKs-ry-MAi" secondAttribute="leading" constant="10" id="QMu-SB-n0b"/>
+                        <constraint firstItem="aY0-R6-j4a" firstAttribute="top" secondItem="lKs-ry-MAi" secondAttribute="top" constant="17" id="XoF-VY-Hsg"/>
+                        <constraint firstItem="TkW-k9-l3U" firstAttribute="top" secondItem="lKs-ry-MAi" secondAttribute="top" constant="12" id="qzF-UH-kx4"/>
+                        <constraint firstItem="TkW-k9-l3U" firstAttribute="leading" secondItem="hSy-u9-SK7" secondAttribute="trailing" constant="10" id="tna-Aq-vyp"/>
+                        <constraint firstAttribute="height" constant="40" id="yVo-sU-pmA"/>
+                    </constraints>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="jDl-pn-Ckx" appends="YES" id="k5D-pj-39y"/>
+                    </connections>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.92156862750000001" green="0.92549019610000005" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="lKs-ry-MAi" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="BWc-1Y-ezh"/>
+                <constraint firstAttribute="trailing" secondItem="lKs-ry-MAi" secondAttribute="trailing" id="GQh-Ta-7fT"/>
+                <constraint firstItem="b9i-Rm-uxH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="NWp-4F-sKu"/>
+                <constraint firstAttribute="trailing" secondItem="b9i-Rm-uxH" secondAttribute="trailing" constant="10" id="Pdh-7W-coO"/>
+                <constraint firstAttribute="trailing" secondItem="hKU-hq-mk5" secondAttribute="trailing" constant="10" id="Yq9-Io-6Rz"/>
+                <constraint firstItem="hKU-hq-mk5" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="af8-P2-7h8"/>
+                <constraint firstItem="kwK-0n-X13" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="cEe-Yy-ouU"/>
+                <constraint firstItem="lKs-ry-MAi" firstAttribute="top" secondItem="b9i-Rm-uxH" secondAttribute="bottom" constant="10" id="fes-4x-lVP"/>
+                <constraint firstItem="kwK-0n-X13" firstAttribute="top" secondItem="hKU-hq-mk5" secondAttribute="bottom" constant="10" id="li9-gF-giP"/>
+                <constraint firstItem="b9i-Rm-uxH" firstAttribute="top" secondItem="kwK-0n-X13" secondAttribute="bottom" constant="10" id="qLI-Aw-P5Q"/>
+                <constraint firstAttribute="trailing" secondItem="kwK-0n-X13" secondAttribute="trailing" id="s7C-f9-Ea4"/>
+                <constraint firstItem="hKU-hq-mk5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="uBx-bs-27m"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="369" y="298"/>
+        </view>
+        <tapGestureRecognizer id="EFe-8J-gve">
+            <connections>
+                <action selector="selectCommunity:" destination="-1" id="Esk-aO-DIc"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="jDl-pn-Ckx">
+            <connections>
+                <action selector="selectActivity:" destination="-1" id="ExL-9a-cgP"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="arrow_right" width="16" height="16"/>
+        <image name="repari_require" width="6" height="6"/>
+    </resources>
+</document>
