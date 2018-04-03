@@ -69,7 +69,7 @@
 #pragma mark-navibar
 -(void)setNavigationbar{
     UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 27,SCREENWIDTH-90 , 30)];
-    view.backgroundColor = VIEW_BG_COLOR;
+    view.backgroundColor = NAV_SEARCHBGCOLOR;
     
     view.clipsToBounds = YES;
     view.layer.cornerRadius = 5;
@@ -91,9 +91,9 @@
     [self.searchTxt setValue:RGBACOLOR(187, 194, 199, 1.0) forKeyPath:@"_placeholderLabel.textColor"];
     [self.searchTxt setValue:[UIFont systemFontOfSize:15] forKeyPath:@"_placeholderLabel.font"];
     self.searchTxt.borderStyle =UITextBorderStyleNone;
-    self.searchTxt.backgroundColor = VIEW_BG_COLOR;
+    self.searchTxt.backgroundColor = NAV_SEARCHBGCOLOR;
     self.searchTxt.delegate = self;
-    self.searchTxt.textColor = RGBACOLOR(187, 194, 199, 1.0) ;
+    self.searchTxt.textColor = NAV_SEARCHTEXTCOLOR ;
     
     self.searchTxt.clearButtonMode = UITextFieldViewModeWhileEditing;
     self.searchTxt.returnKeyType = UIReturnKeySearch;

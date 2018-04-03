@@ -118,9 +118,9 @@
     
     
     if (!(GT_IOS7)){
-        self.searchTxt = [[UITextField alloc]initWithFrame:CGRectMake(30, 5,SCREENWIDTH-100 , 30)];
+        self.searchTxt = [[UITextField alloc]initWithFrame:CGRectMake(30, 5,SCREENWIDTH-120 , 30)];
     }else{
-        self.searchTxt = [[UITextField alloc]initWithFrame:CGRectMake(30, 0,SCREENWIDTH-100 , 30)];
+        self.searchTxt = [[UITextField alloc]initWithFrame:CGRectMake(30, 0,SCREENWIDTH-120 , 30)];
     }
     self.searchTxt.placeholder = @"搜索周边商户";
     //187 194 199
