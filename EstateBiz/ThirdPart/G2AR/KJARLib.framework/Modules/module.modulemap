@@ -1,0 +1,6 @@
+framework module KJARLib {
+  umbrella header "KJARLib.h"
+
+  export *
+  module * { export * }
+}

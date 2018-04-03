@@ -22,6 +22,7 @@
 #import "SearchCommunityController.h"
 #import "HandlePush.h"
 #import "NoMemberCardCell.h"
+#import <KJARLib/KJARSCanViewController.h>
 
 static NSString *weatherIdentifier = @"WeatherCell";
 static NSString *serviceIdentifier = @"HomeServiceCell";
@@ -86,7 +87,7 @@ static NSString *noMemberCardIdentifier = @"NoMemberCardCell";
 }
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    
+    [self.navigationController setNavigationBarHidden:NO animated:animated];
     if ([AppDelegate sharedAppDelegate].tabController.tabBarHidden) {
         [[AppDelegate sharedAppDelegate].tabController setTabBarHidden:NO animated:YES];
     }
@@ -111,12 +112,17 @@ static NSString *noMemberCardIdentifier = @"NoMemberCardCell";
     
     
     self.navigationItem.rightBarButtonItem = [AppTheme itemWithContent:[UIImage imageNamed:@"home_scan"] handler:^(id sender) {
-        ScanActivity *scan = [ScanActivity loadFromNib];
+        //AR扫描
+        [[AppDelegate sharedAppDelegate].tabController setTabBarHidden:YES animated:YES];//隐藏tabbar
+        KJARSCanViewController* scanView = [[KJARSCanViewController alloc] init];
+        [scanView SetAccountKey:@"AP9552c0c4cf9a45f3abff78e8cb7f9ebe" : @"981699a775474c189cfd8a249c5be311"];
+        [self.navigationController pushViewController:scanView animated:YES];
         
-        scan.whenGetScan = ^(NSString *scanValue){
-        };
-        
-        [self.navigationController pushViewController:scan animated:YES];
+        //20180403ly 之前的扫描
+//        ScanActivity *scan = [ScanActivity loadFromNib];
+//        scan.whenGetScan = ^(NSString *scanValue){
+//        };
+//        [self.navigationController pushViewController:scan animated:YES];
         
     }];
     
