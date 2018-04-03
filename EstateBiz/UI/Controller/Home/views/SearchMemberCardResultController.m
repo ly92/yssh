@@ -68,8 +68,8 @@
 
 #pragma mark-navibar
 -(void)setNavigationbar{
-    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 27,SCREENWIDTH-70 , 30)];
-    view.backgroundColor = [UIColor blackColor];
+    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 27,SCREENWIDTH-90 , 30)];
+    view.backgroundColor = VIEW_BG_COLOR;
     
     view.clipsToBounds = YES;
     view.layer.cornerRadius = 5;
@@ -81,9 +81,9 @@
     
     
     if (!(GT_IOS7)){
-        self.searchTxt = [[UITextField alloc]initWithFrame:CGRectMake(30, 5,SCREENWIDTH-100 , 30)];
+        self.searchTxt = [[UITextField alloc]initWithFrame:CGRectMake(30, 5,SCREENWIDTH-120 , 30)];
     }else{
-        self.searchTxt = [[UITextField alloc]initWithFrame:CGRectMake(30, 0,SCREENWIDTH-100 , 30)];
+        self.searchTxt = [[UITextField alloc]initWithFrame:CGRectMake(30, 0,SCREENWIDTH-120 , 30)];
     }
     self.searchTxt.placeholder = @"搜索周边商户";
     self.searchTxt.backgroundColor = [UIColor clearColor];
@@ -91,7 +91,7 @@
     [self.searchTxt setValue:RGBACOLOR(187, 194, 199, 1.0) forKeyPath:@"_placeholderLabel.textColor"];
     [self.searchTxt setValue:[UIFont systemFontOfSize:15] forKeyPath:@"_placeholderLabel.font"];
     self.searchTxt.borderStyle =UITextBorderStyleNone;
-    self.searchTxt.backgroundColor = [UIColor blackColor];
+    self.searchTxt.backgroundColor = VIEW_BG_COLOR;
     self.searchTxt.delegate = self;
     self.searchTxt.textColor = RGBACOLOR(187, 194, 199, 1.0) ;
     

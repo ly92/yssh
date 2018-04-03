@@ -19,7 +19,8 @@
 
 #define BASE_URL_4 @"http://121.40.207.233:8080/api/"  //支付测试
 
-#define BASE_KAKATOOL_URL_1 @"https://api.kakatool.com/"//卡卡兔正式服务器
+//#define BASE_KAKATOOL_URL_1 @"https://api.kakatool.com/"//卡卡兔正式服务器
+#define BASE_KAKATOOL_URL_1 @"https://kkt.wwwcity.net/"//星生活正式服务器-20180402-ly
 #define BASE_KAKATOOL_URL_2 @"https://test.kakatool.cn"//卡卡兔测试服务器
 
 

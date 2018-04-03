@@ -48,11 +48,9 @@
 - (IBAction)selectCommunity:(id)sender {
     SelectCommunityController *selectCommunity = [[SelectCommunityController alloc]init];
     
-    selectCommunity.isCommunityActivity = YES;
     selectCommunity.selectCommunity = ^(NSDictionary *dic){
         self.selectCommunityLbl.text = dic[@"name"];
         self.communityId = dic[@"bid"];
-        
     };
     [self.navigationController pushViewController:selectCommunity animated:YES];
     

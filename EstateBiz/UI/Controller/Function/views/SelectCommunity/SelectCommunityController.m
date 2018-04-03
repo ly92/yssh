@@ -130,14 +130,14 @@
         NSDictionary *item =[self.dataArray objectAtIndex:indexPath.row];
         
         if (item) {
-            if (self.isCommunityActivity) {
+//            if (self.isCommunityActivity) {
                 self.selectCommunity(item);
-            }else{
-                
+//            }else{
+            
                 //                if (self.delegate&&[self.delegate respondsToSelector:@selector(selectCommunityCompleted:)]) {
                 //                    [self.delegate selectCommunityCompleted:item];
                 //                }
-            }
+//            }
             
             [self.navigationController popViewControllerAnimated:YES];
             

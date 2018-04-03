@@ -105,7 +105,7 @@
 
 #pragma mark-navibar
 -(void)setNavigationbar{
-    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 27,SCREENWIDTH-70 , 30)];
+    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 27,SCREENWIDTH-90 , 30)];
     view.backgroundColor = NAV_SEARCHBGCOLOR;
     
     view.clipsToBounds = YES;

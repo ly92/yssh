@@ -302,6 +302,10 @@
     SelectCommunityController *selectCommunity=[[SelectCommunityController alloc] init];
     selectCommunity.selectCommunity = ^(NSDictionary *str){
          self.lblCommunity.text = [str objectForKey:@"name"];
+        if (!self.community){
+            self.community = [[Community alloc] init];
+        }
+        self.community.bid = [str objectForKey:@"bid"];
     };
     [self.navigationController pushViewController:selectCommunity animated:YES];
 }
