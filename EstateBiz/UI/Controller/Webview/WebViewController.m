@@ -523,6 +523,7 @@
     resultUrl = [resultUrl stringByReplacingOccurrencesOfString:@"$appid$" withString:appid];
     resultUrl = [resultUrl stringByReplacingOccurrencesOfString:@"$communityid$" withString:communityid];
     resultUrl = [resultUrl stringByReplacingOccurrencesOfString:@"$cmd$" withString:cmd];
+    resultUrl = [resultUrl stringByReplacingOccurrencesOfString:@"$kkttoken$" withString:[[LocalData getDeviceToken] urlEncode]];
     
     return resultUrl;
 }
