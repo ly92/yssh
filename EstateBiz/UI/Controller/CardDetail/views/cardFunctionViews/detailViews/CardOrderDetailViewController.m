@@ -150,7 +150,7 @@
             }
             
             self.orderViewHeight.constant = 220-42 + self.remarkLHeight.constant + self.replyLHeight.constant -21 +self.addressLHeight.constant;
-            self.containerViewHeight.constant = 470 - 220 + self.orderViewHeight.constant-88 +self.tvViewH.constant;
+            self.containerViewHeight.constant = 530 - 220 + self.orderViewHeight.constant-88 +self.tvViewH.constant;
             //订单状态
             NSString *a_status = [NSString stringWithFormat:@"%@",result.orderinfo.status];
             
