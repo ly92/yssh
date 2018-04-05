@@ -142,7 +142,6 @@
 		08BDC3281D13E9A0005BBF74 /* MsgAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BDC3261D13E9A0005BBF74 /* MsgAdViewController.m */; };
 		08BDC3291D13E9A0005BBF74 /* MsgAdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08BDC3271D13E9A0005BBF74 /* MsgAdViewController.xib */; };
 		08BDC32C1D13FF10005BBF74 /* AddMemberCardAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BDC32B1D13FF10005BBF74 /* AddMemberCardAPI.m */; };
-		08C208E32073D2B600C1FFCD /* KJARLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08C208E22073D2B600C1FFCD /* KJARLib.framework */; };
 		08C209052073D2E600C1FFCD /* arscan_lock@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08C208E42073D2E400C1FFCD /* arscan_lock@2x.png */; };
 		08C209062073D2E600C1FFCD /* arscan_lock@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08C208E52073D2E400C1FFCD /* arscan_lock@3x.png */; };
 		08C209072073D2E700C1FFCD /* loader_spinner0013.png in Resources */ = {isa = PBXBuildFile; fileRef = 08C208E72073D2E400C1FFCD /* loader_spinner0013.png */; };
@@ -175,8 +174,9 @@
 		08C209222073D2E700C1FFCD /* arscan_unlock@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08C209022073D2E600C1FFCD /* arscan_unlock@3x.png */; };
 		08C209232073D2E700C1FFCD /* arscan_flip@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08C209032073D2E600C1FFCD /* arscan_flip@3x.png */; };
 		08C209242073D2E700C1FFCD /* arscan_flip@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08C209042073D2E600C1FFCD /* arscan_flip@2x.png */; };
-		08C209252073D36100C1FFCD /* KJARLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08C208E22073D2B600C1FFCD /* KJARLib.framework */; };
-		08C209262073D36100C1FFCD /* KJARLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 08C208E22073D2B600C1FFCD /* KJARLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		08C2092E2076680900C1FFCD /* KJARLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08C2092D2076680900C1FFCD /* KJARLib.framework */; };
+		08C2092F2076692500C1FFCD /* KJARLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08C2092D2076680900C1FFCD /* KJARLib.framework */; };
+		08C209302076692500C1FFCD /* KJARLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 08C2092D2076680900C1FFCD /* KJARLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		08C70B831D0F94DD007E21D4 /* SubscribeListAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C70B821D0F94DD007E21D4 /* SubscribeListAPI.m */; };
 		08C70B861D0F9832007E21D4 /* SubscribeListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C70B851D0F9832007E21D4 /* SubscribeListModel.m */; };
 		08DAE6C71CC7536100C2274A /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08DAE6C61CC7536100C2274A /* AlipaySDK.framework */; };
@@ -652,13 +652,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		08C209272073D36100C1FFCD /* Embed Frameworks */ = {
+		08C209312076692500C1FFCD /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				08C209262073D36100C1FFCD /* KJARLib.framework in Embed Frameworks */,
+				08C209302076692500C1FFCD /* KJARLib.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -895,7 +895,6 @@
 		08BDC3271D13E9A0005BBF74 /* MsgAdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MsgAdViewController.xib; sourceTree = "<group>"; };
 		08BDC32A1D13FF10005BBF74 /* AddMemberCardAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddMemberCardAPI.h; sourceTree = "<group>"; };
 		08BDC32B1D13FF10005BBF74 /* AddMemberCardAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddMemberCardAPI.m; sourceTree = "<group>"; };
-		08C208E22073D2B600C1FFCD /* KJARLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KJARLib.framework; sourceTree = "<group>"; };
 		08C208E42073D2E400C1FFCD /* arscan_lock@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arscan_lock@2x.png"; sourceTree = "<group>"; };
 		08C208E52073D2E400C1FFCD /* arscan_lock@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arscan_lock@3x.png"; sourceTree = "<group>"; };
 		08C208E72073D2E400C1FFCD /* loader_spinner0013.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loader_spinner0013.png; sourceTree = "<group>"; };
@@ -928,6 +927,7 @@
 		08C209022073D2E600C1FFCD /* arscan_unlock@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arscan_unlock@3x.png"; sourceTree = "<group>"; };
 		08C209032073D2E600C1FFCD /* arscan_flip@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arscan_flip@3x.png"; sourceTree = "<group>"; };
 		08C209042073D2E600C1FFCD /* arscan_flip@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arscan_flip@2x.png"; sourceTree = "<group>"; };
+		08C2092D2076680900C1FFCD /* KJARLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KJARLib.framework; sourceTree = "<group>"; };
 		08C70B811D0F94DD007E21D4 /* SubscribeListAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubscribeListAPI.h; sourceTree = "<group>"; };
 		08C70B821D0F94DD007E21D4 /* SubscribeListAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubscribeListAPI.m; sourceTree = "<group>"; };
 		08C70B841D0F9832007E21D4 /* SubscribeListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubscribeListModel.h; sourceTree = "<group>"; };
@@ -1809,7 +1809,7 @@
 				08DAE78E1CC75BCA00C2274A /* SMSConnection.framework in Frameworks */,
 				08DAE79B1CC75BCA00C2274A /* ShareSDKFlatShareViewUI.framework in Frameworks */,
 				D944CDCE1BD764040082F8D3 /* CoreMedia.framework in Frameworks */,
-				08C209252073D36100C1FFCD /* KJARLib.framework in Frameworks */,
+				08C2092F2076692500C1FFCD /* KJARLib.framework in Frameworks */,
 				D944CDCC1BD763FD0082F8D3 /* CoreLocation.framework in Frameworks */,
 				D944CDCA1BD763EA0082F8D3 /* Security.framework in Frameworks */,
 				08DAE7991CC75BCA00C2274A /* ShareSDK.framework in Frameworks */,
@@ -1817,7 +1817,7 @@
 				D944CDC61BD763D60082F8D3 /* MessageUI.framework in Frameworks */,
 				D944CDC41BD763D00082F8D3 /* MapKit.framework in Frameworks */,
 				08DAE7921CC75BCA00C2274A /* MOBFoundation.framework in Frameworks */,
-				08C208E32073D2B600C1FFCD /* KJARLib.framework in Frameworks */,
+				08C2092E2076680900C1FFCD /* KJARLib.framework in Frameworks */,
 				D944CDC21BD763C90082F8D3 /* QuartzCore.framework in Frameworks */,
 				08DAE7971CC75BCA00C2274A /* libWeiboSDK.a in Frameworks */,
 				D944CDC01BD763C10082F8D3 /* AudioToolbox.framework in Frameworks */,
@@ -2178,6 +2178,7 @@
 		08C208E12073D28E00C1FFCD /* G2AR */ = {
 			isa = PBXGroup;
 			children = (
+				08C2092D2076680900C1FFCD /* KJARLib.framework */,
 				08C208E62073D2E400C1FFCD /* animation1 */,
 				08C208FF2073D2E500C1FFCD /* arscan_back@2x.png */,
 				08C209002073D2E500C1FFCD /* arscan_back@3x.png */,
@@ -2187,7 +2188,6 @@
 				08C208E52073D2E400C1FFCD /* arscan_lock@3x.png */,
 				08C209012073D2E500C1FFCD /* arscan_unlock@2x.png */,
 				08C209022073D2E600C1FFCD /* arscan_unlock@3x.png */,
-				08C208E22073D2B600C1FFCD /* KJARLib.framework */,
 			);
 			path = G2AR;
 			sourceTree = "<group>";
@@ -4323,7 +4323,7 @@
 				D9EB447A1BD61DC30034A3A4 /* Resources */,
 				0C7A624DD5051972E6BA7684 /* [CP] Embed Pods Frameworks */,
 				5D57C3D69060AC8AE564E260 /* [CP] Copy Pods Resources */,
-				08C209272073D36100C1FFCD /* Embed Frameworks */,
+				08C209312076692500C1FFCD /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -4382,7 +4382,7 @@
 					D9EB447B1BD61DC30034A3A4 = {
 						CreatedOnToolsVersion = 7.0.1;
 						DevelopmentTeam = NBHLFYA79A;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.Push = {
 								enabled = 1;
@@ -4629,7 +4629,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		5D57C3D69060AC8AE564E260 /* [CP] Copy Pods Resources */ = {
@@ -5205,7 +5205,7 @@
 				CODE_SIGN_ENTITLEMENTS = EstateBiz/EstateBiz.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = NBHLFYA79A;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -5253,8 +5253,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.magicsoft.appyssh;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "5955fb21-6cab-4e02-88a1-869847dbcb3a";
+				PROVISIONING_PROFILE_SPECIFIER = APPysshDev;
 			};
 			name = Debug;
 		};
@@ -5267,7 +5267,7 @@
 				CODE_SIGN_ENTITLEMENTS = EstateBiz/EstateBiz.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = NBHLFYA79A;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -5315,8 +5315,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.magicsoft.appyssh;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "2bc45a1f-8308-48d8-bc9f-d1b880f0539d";
+				PROVISIONING_PROFILE_SPECIFIER = APPysshStore;
 			};
 			name = Release;
 		};

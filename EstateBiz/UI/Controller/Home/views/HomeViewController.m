@@ -116,8 +116,10 @@ static NSString *noMemberCardIdentifier = @"NoMemberCardCell";
         [[AppDelegate sharedAppDelegate].tabController setTabBarHidden:YES animated:YES];//隐藏tabbar
         KJARSCanViewController* scanView = [[KJARSCanViewController alloc] init];
         [scanView SetAccountKey:@"AP9552c0c4cf9a45f3abff78e8cb7f9ebe" : @"981699a775474c189cfd8a249c5be311"];
-        [self.navigationController pushViewController:scanView animated:YES];
-        
+//        [self.navigationController pushViewController:scanView animated:YES];
+        UINavigationController* m_rootController = (UINavigationController*)self.parentViewController;
+        [m_rootController pushViewController:scanView animated:YES];
+
         //20180403ly 之前的扫描
 //        ScanActivity *scan = [ScanActivity loadFromNib];
 //        scan.whenGetScan = ^(NSString *scanValue){
