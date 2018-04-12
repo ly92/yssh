@@ -112,19 +112,11 @@ static NSString *noMemberCardIdentifier = @"NoMemberCardCell";
     
     
     self.navigationItem.rightBarButtonItem = [AppTheme itemWithContent:[UIImage imageNamed:@"home_scan"] handler:^(id sender) {
-        //AR扫描
-        [[AppDelegate sharedAppDelegate].tabController setTabBarHidden:YES animated:YES];//隐藏tabbar
-        KJARSCanViewController* scanView = [[KJARSCanViewController alloc] init];
-        [scanView SetAccountKey:@"AP9552c0c4cf9a45f3abff78e8cb7f9ebe" : @"981699a775474c189cfd8a249c5be311"];
-//        [self.navigationController pushViewController:scanView animated:YES];
-        UINavigationController* m_rootController = (UINavigationController*)self.parentViewController;
-        [m_rootController pushViewController:scanView animated:YES];
-
-        //20180403ly 之前的扫描
-//        ScanActivity *scan = [ScanActivity loadFromNib];
-//        scan.whenGetScan = ^(NSString *scanValue){
-//        };
-//        [self.navigationController pushViewController:scan animated:YES];
+        //扫描
+        ScanActivity *scan = [ScanActivity loadFromNib];
+        scan.whenGetScan = ^(NSString *scanValue){
+        };
+        [self.navigationController pushViewController:scan animated:YES];
         
     }];
     
@@ -1236,41 +1228,34 @@ static NSString *noMemberCardIdentifier = @"NoMemberCardCell";
         if ([act isEqualToString:@"1"]) {
             NSString *proto = functionModel.actionios;
             if (![ISNull isNilOfSender:proto]) {
-                //跳转到原生界面
-                @try {
+                if ([proto.trim isEqualToString:@"ARScanActivity"]){
+                    //AR扫描
+                    [[AppDelegate sharedAppDelegate].tabController setTabBarHidden:YES animated:YES];//隐藏tabbar
+                    KJARSCanViewController* scanView = [[KJARSCanViewController alloc] init];
+                    [scanView SetAccountKey:@"AP9552c0c4cf9a45f3abff78e8cb7f9ebe" : @"981699a775474c189cfd8a249c5be311"];
+                    [self.navigationController pushViewController:scanView animated:YES];
                     
-                    id myObj = [NSClassFromString(proto) spawn];
-                    
-                    if ([myObj isKindOfClass:[UIViewController class]]) {
-                        
-                    
-                        UIViewController *con = (UIViewController *)myObj;
-                        
-                      
-                        con.data = functionModel.name;
-                        
-                        [self.navigationController pushViewController:con animated:YES];
-                        
-                       
-                    }else{
-                        
-                        [SVProgressHUD showErrorWithStatus:@"该功能暂时未开放"];
-                        
+                }else{
+                    //跳转到原生界面
+                    @try {
+                        id myObj = [NSClassFromString(proto) spawn];
+                        if ([myObj isKindOfClass:[UIViewController class]]) {
+                            UIViewController *con = (UIViewController *)myObj;
+                            con.data = functionModel.name;
+                            [self.navigationController pushViewController:con animated:YES];
+                        }else{
+                            [SVProgressHUD showErrorWithStatus:@"该功能暂时未开放"];
+                        }
+                    }
+                    @catch (NSException *exception) {
+                    }
+                    @finally {
                     }
                 }
-                @catch (NSException *exception) {
-                    
-                }
-                @finally {
-                    
-                }
-                
             }else{
                 //跳转到未建设界面
                 ComingSoonController *comingSoon = [ComingSoonController spawn];
-                
                 comingSoon.data = functionModel.name;
-                
                 [self.navigationController pushViewController:comingSoon animated:YES];
             }
         }else if ([act isEqualToString:@"0"]){
@@ -1279,7 +1264,6 @@ static NSString *noMemberCardIdentifier = @"NoMemberCardCell";
                 NSString *outerurl = functionModel.actionurl;
                  outerurl =  [WebViewController pingUrlWithUrl:outerurl pushCmd:nil];
                 if ([outerurl trim].length>0) {
-                    
                     WebViewController *web = [WebViewController spawn];
                     web.webURL = outerurl;
                     web.title = functionModel.name;
@@ -1289,7 +1273,6 @@ static NSString *noMemberCardIdentifier = @"NoMemberCardCell";
 //            }
         }else if ([act isEqualToString:@"3"]){
             NSString *proto = functionModel.actionios;
-            
             //跳转到特定卡详情
             if([proto isEqualToString:@"JumpBizInfo"]){
                 

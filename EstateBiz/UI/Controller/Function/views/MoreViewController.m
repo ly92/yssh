@@ -13,6 +13,8 @@
 //#import "RealReachability.h"
 #import "MemberCardDetailViewController.h"
 #import "NoMemberCardDetailViewController.h"
+#import <KJARLib/KJARSCanViewController.h>
+
 
 @interface MoreViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
@@ -41,7 +43,7 @@
 }
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    
+    [self.navigationController setNavigationBarHidden:NO animated:animated];
     if (![AppDelegate sharedAppDelegate].tabController.tabBarHidden) {
         [[AppDelegate sharedAppDelegate].tabController setTabBarHidden:YES animated:YES];
     }
@@ -188,31 +190,30 @@
             if ([act isEqualToString:@"1"]) {
                 NSString *proto = functionModel.actionios;
                 if (![ISNull isNilOfSender:proto]) {
-                    //跳转到原生界面
-                    @try {
-                        
-                        id myObj = [NSClassFromString(proto) spawn];
-                        if ([myObj isKindOfClass:[UIViewController class]]) {
-                            
-                            UIViewController *con = (UIViewController *)myObj;
-                            
-                            con.data = functionModel.name;
-                            
-                            [self.navigationController pushViewController:con animated:YES];
-                            
-                            
-                        }else{
-                             [self presentFailureTips:@"该功能暂时未开放"];
-                            
+                    //是否为体验AR
+                    if ([proto.trim isEqualToString:@"ARScanActivity"]){
+                        //AR扫描
+                        KJARSCanViewController* scanView = [[KJARSCanViewController alloc] init];
+                        [scanView SetAccountKey:@"AP9552c0c4cf9a45f3abff78e8cb7f9ebe" : @"981699a775474c189cfd8a249c5be311"];
+                        [self.navigationController pushViewController:scanView animated:YES];
+
+                    }else{
+                        //跳转到原生界面
+                        @try {
+                            id myObj = [NSClassFromString(proto) spawn];
+                            if ([myObj isKindOfClass:[UIViewController class]]) {
+                                UIViewController *con = (UIViewController *)myObj;
+                                con.data = functionModel.name;
+                                [self.navigationController pushViewController:con animated:YES];
+                            }else{
+                                [self presentFailureTips:@"该功能暂时未开放"];
+                            }
+                        }
+                        @catch (NSException *exception) {
+                        }
+                        @finally {
                         }
                     }
-                    @catch (NSException *exception) {
-                        
-                    }
-                    @finally {
-                        
-                    }
-                    
                 }else{
                     //跳转到未建设界面
                     ComingSoonController *comingSoon = [ComingSoonController spawn];

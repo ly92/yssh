@@ -5253,7 +5253,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.magicsoft.appyssh;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "5955fb21-6cab-4e02-88a1-869847dbcb3a";
+				PROVISIONING_PROFILE = "75bcfe8e-f6a1-40d8-bbd3-109b5c6739cc";
 				PROVISIONING_PROFILE_SPECIFIER = APPysshDev;
 			};
 			name = Debug;
