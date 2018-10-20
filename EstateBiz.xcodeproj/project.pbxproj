@@ -211,7 +211,6 @@
 		08DAE79B1CC75BCA00C2274A /* ShareSDKFlatShareViewUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08DAE7851CC75BCA00C2274A /* ShareSDKFlatShareViewUI.framework */; };
 		08DAE79C1CC75BCA00C2274A /* ShareSDKShareActionSheet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08DAE7861CC75BCA00C2274A /* ShareSDKShareActionSheet.framework */; };
 		08DAE79D1CC75BCA00C2274A /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 08DAE7881CC75BCA00C2274A /* libWeChatSDK.a */; };
-		08DAE79F1CC75DDF00C2274A /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 08DAE79E1CC75DDF00C2274A /* libstdc++.6.0.9.tbd */; };
 		08DAE7A11CC75DEF00C2274A /* libz.1.2.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 08DAE7A01CC75DEF00C2274A /* libz.1.2.5.tbd */; };
 		08DAE7A31CC75E6000C2274A /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 08DAE7A21CC75E6000C2274A /* libsqlite3.tbd */; };
 		08DAE7A51CC75E6E00C2274A /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 08DAE7A41CC75E6E00C2274A /* libicucore.tbd */; };
@@ -1778,7 +1777,6 @@
 				08DAE7A51CC75E6E00C2274A /* libicucore.tbd in Frameworks */,
 				08DAE7A31CC75E6000C2274A /* libsqlite3.tbd in Frameworks */,
 				08DAE7A11CC75DEF00C2274A /* libz.1.2.5.tbd in Frameworks */,
-				08DAE79F1CC75DDF00C2274A /* libstdc++.6.0.9.tbd in Frameworks */,
 				08DAE7941CC75BCA00C2274A /* ShareSDKCoreService.framework in Frameworks */,
 				08DAE7351CC7559100C2274A /* libc++.tbd in Frameworks */,
 				08DAE7331CC7555100C2274A /* libz.tbd in Frameworks */,
@@ -4321,7 +4319,6 @@
 				D9EB44781BD61DC30034A3A4 /* Sources */,
 				D9EB44791BD61DC30034A3A4 /* Frameworks */,
 				D9EB447A1BD61DC30034A3A4 /* Resources */,
-				0C7A624DD5051972E6BA7684 /* [CP] Embed Pods Frameworks */,
 				5D57C3D69060AC8AE564E260 /* [CP] Copy Pods Resources */,
 				08C209312076692500C1FFCD /* Embed Frameworks */,
 			);
@@ -4599,21 +4596,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0C7A624DD5051972E6BA7684 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EstateBiz/Pods-EstateBiz-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		481A0FDA35CDAA99886B2E0C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -4629,7 +4611,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		5D57C3D69060AC8AE564E260 /* [CP] Copy Pods Resources */ = {
@@ -4644,7 +4626,8 @@
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
