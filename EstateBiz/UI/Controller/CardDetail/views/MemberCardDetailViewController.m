@@ -287,22 +287,39 @@
 //全部商品
 - (IBAction)allShopsClick {
     NSLog(@"全部商品");
-    NSString *baseURL = [NSString stringWithFormat:@"%@",@"https://api.kakatool.com/v1/"];
-    baseURL = [baseURL stringByReplacingOccurrencesOfString:@"v1/" withString:@""];
-    //商品列表不支持https协议
-    if ([baseURL containsString:@"https"]) {
-        baseURL = [baseURL stringByReplacingCharactersInRange:NSMakeRange(4, 1) withString:@""];
-    }
-    NSLog(@"baseURL = %@",baseURL);
-    NSString *urlStr     = [NSString stringWithFormat:@"%@production/index.html?bid=%@&token=%@",baseURL,self.card.bid,[LocalData getAccessToken]];
     
+    /**
+     1021---ly
+     将url替换为类似下面的url注意参数排序必须按照顺序来拼接 第一个参数 bid 第二个参数 appid 第三个参数 token
+     http://kkt.wwwcity.net/production/xing_production_frontend/index.html?bid=10002863&appid=111&token=10000122#92d00187dce05131265fd02afd582f8d
+     
+     之前的逻辑--ly
+     NSString *baseURL = [NSString stringWithFormat:@"%@",@"https://api.kakatool.com/v1/"];
+     baseURL = [baseURL stringByReplacingOccurrencesOfString:@"v1/" withString:@""];
+     //商品列表不支持https协议
+     if ([baseURL containsString:@"https"]) {
+     baseURL = [baseURL stringByReplacingCharactersInRange:NSMakeRange(4, 1) withString:@""];
+     }
+     NSLog(@"baseURL = %@",baseURL);
+     NSString *urlStr     = [NSString stringWithFormat:@"%@production/index.html?bid=%@&token=%@",baseURL,self.card.bid,[LocalData getAccessToken]];
+     
+     WebViewController *web = [WebViewController spawn];
+     web.isShop = YES;
+     web.webURL = urlStr;
+     web.title = @"全部商品";
+     [self.navigationController pushViewController:web animated:YES];
+     
+     */
+    
+    
+    NSString *baseURL = @"http://kkt.wwwcity.net/production/xing_production_frontend/index.html";
+    NSLog(@"baseURL = %@",baseURL);
+    NSString *urlStr = [NSString stringWithFormat:@"%@?bid=%@&appid=%@&token=%@",baseURL,self.card.bid,APP_ID,[LocalData getAccessToken]];
     WebViewController *web = [WebViewController spawn];
     web.isShop = YES;
     web.webURL = urlStr;
     web.title = @"全部商品";
     [self.navigationController pushViewController:web animated:YES];
-    
-    
 }
 
 #pragma mark-加载数据
