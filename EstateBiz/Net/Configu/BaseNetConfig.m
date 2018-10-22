@@ -12,7 +12,8 @@
 #import "BaseUrlFilter.h"
 
 //#define BASE_URL_1 @"http://wetown.kakatool.cn/api/" //正式服务器
-#define BASE_URL_1 @"https://wetown.kakatool.cn/api/" //正式服务器(https)
+//#define BASE_URL_1 @"https://wetown.kakatool.cn/api/" //正式服务器(https)
+#define BASE_URL_1 @"http://wt.wwwcity.net/api/" //正式服务器 20181022-ly 星生活
 #define BASE_URL_2 @"http://192.168.0.169:8000/api/"         //内部测试
 //#define BASE_URL_3 @"http://wttest.kakatool.cn:8080/api/"    //外部测试
 #define BASE_URL_3 @"https://wttest.kakatool.cn/api/"    //外部测试
