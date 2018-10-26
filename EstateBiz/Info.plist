@@ -49,7 +49,7 @@
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>111</string>
+	<string>112</string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>mqzone</string>
@@ -127,7 +127,7 @@
 		</dict>
 	</dict>
 	<key>NSBluetoothPeripheralUsageDescription</key>
-	<string>App需要使用蓝牙功能打开蓝牙门襟</string>
+	<string>App需要使用蓝牙功能打开蓝牙门禁</string>
 	<key>NSCalendarsUsageDescription</key>
 	<string>App需要使用您的日历</string>
 	<key>NSCameraUsageDescription</key>
