@@ -13,7 +13,7 @@
 //#import "RealReachability.h"
 #import "MemberCardDetailViewController.h"
 #import "NoMemberCardDetailViewController.h"
-#import <KJARLib/KJARSCanViewController.h>
+//#import <KJARLib/KJARSCanViewController.h>
 
 
 @interface MoreViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
@@ -193,9 +193,9 @@
                     //是否为体验AR
                     if ([proto.trim isEqualToString:@"ARScanActivity"]){
                         //AR扫描
-                        KJARSCanViewController* scanView = [[KJARSCanViewController alloc] init];
-                        [scanView SetAccountKey:@"AP9552c0c4cf9a45f3abff78e8cb7f9ebe" : @"981699a775474c189cfd8a249c5be311"];
-                        [self.navigationController pushViewController:scanView animated:YES];
+//                        KJARSCanViewController* scanView = [[KJARSCanViewController alloc] init];
+//                        [scanView SetAccountKey:@"AP9552c0c4cf9a45f3abff78e8cb7f9ebe" : @"981699a775474c189cfd8a249c5be311"];
+//                        [self.navigationController pushViewController:scanView animated:YES];
 
                     }else{
                         //跳转到原生界面

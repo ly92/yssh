@@ -22,7 +22,7 @@
 #import "SearchCommunityController.h"
 #import "HandlePush.h"
 #import "NoMemberCardCell.h"
-#import <KJARLib/KJARSCanViewController.h>
+//#import <KJARLib/K/JARSCanViewController.h>
 
 static NSString *weatherIdentifier = @"WeatherCell";
 static NSString *serviceIdentifier = @"HomeServiceCell";
@@ -1230,10 +1230,10 @@ static NSString *noMemberCardIdentifier = @"NoMemberCardCell";
             if (![ISNull isNilOfSender:proto]) {
                 if ([proto.trim isEqualToString:@"ARScanActivity"]){
                     //AR扫描
-                    [[AppDelegate sharedAppDelegate].tabController setTabBarHidden:YES animated:YES];//隐藏tabbar
-                    KJARSCanViewController* scanView = [[KJARSCanViewController alloc] init];
-                    [scanView SetAccountKey:@"AP9552c0c4cf9a45f3abff78e8cb7f9ebe" : @"981699a775474c189cfd8a249c5be311"];
-                    [self.navigationController pushViewController:scanView animated:YES];
+//                    [[AppDelegate sharedAppDelegate].tabController setTabBarHidden:YES animated:YES];//隐藏tabbar
+//                    KJARSCanViewController* scanView = [[KJARSCanViewController alloc] init];
+//                    [scanView SetAccountKey:@"AP9552c0c4cf9a45f3abff78e8cb7f9ebe" : @"981699a775474c189cfd8a249c5be311"];
+//                    [self.navigationController pushViewController:scanView animated:YES];
                     
                 }else{
                     //跳转到原生界面

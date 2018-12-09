@@ -26,8 +26,6 @@
 		047406051D2659440007BAA0 /* SelectCommunityController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047406031D2659440007BAA0 /* SelectCommunityController.m */; };
 		047406061D2659440007BAA0 /* SelectCommunityController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047406041D2659440007BAA0 /* SelectCommunityController.xib */; };
 		047406091D265BE10007BAA0 /* SelectCommunityAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 047406081D265BE10007BAA0 /* SelectCommunityAPI.m */; };
-		047406171D265E350007BAA0 /* NoticeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 047406151D265E350007BAA0 /* NoticeCell.m */; };
-		047406181D265E350007BAA0 /* NoticeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047406161D265E350007BAA0 /* NoticeCell.xib */; };
 		0474061C1D265F840007BAA0 /* GetNoticeListAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 0474061B1D265F840007BAA0 /* GetNoticeListAPI.m */; };
 		0474061F1D26625B0007BAA0 /* NoticeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0474061E1D26625B0007BAA0 /* NoticeModel.m */; };
 		04828E5C1D2B885200DCF13C /* PushModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04828E5B1D2B885200DCF13C /* PushModel.m */; };
@@ -135,6 +133,9 @@
 		08816FE21D13854C0003DA9A /* WeatherView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08816FE11D13854C0003DA9A /* WeatherView.m */; };
 		08816FE51D1385C70003DA9A /* WeatherAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 08816FE41D1385C70003DA9A /* WeatherAPI.m */; };
 		08816FE71D13A2050003DA9A /* WeatherView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08816FE61D13A2050003DA9A /* WeatherView.xib */; };
+		08A3A3A621BD60CD008E071F /* NoticeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08A3A3A321BD60CD008E071F /* NoticeCell.xib */; };
+		08A3A3A721BD60CD008E071F /* NoticeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A3A3A421BD60CD008E071F /* NoticeCell.m */; };
+		08A3A3A821BD60CD008E071F /* NoticeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A3A3A521BD60CD008E071F /* NoticeViewController.m */; };
 		08B2F21B1D114CCE00195BA3 /* CardTransactionAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B2F21A1D114CCE00195BA3 /* CardTransactionAPI.m */; };
 		08B2F21E1D114E8900195BA3 /* CardTransactionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B2F21D1D114E8900195BA3 /* CardTransactionModel.m */; };
 		08B2F2211D11590400195BA3 /* CardTransactionDetailAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B2F2201D11590400195BA3 /* CardTransactionDetailAPI.m */; };
@@ -174,9 +175,6 @@
 		08C209222073D2E700C1FFCD /* arscan_unlock@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08C209022073D2E600C1FFCD /* arscan_unlock@3x.png */; };
 		08C209232073D2E700C1FFCD /* arscan_flip@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08C209032073D2E600C1FFCD /* arscan_flip@3x.png */; };
 		08C209242073D2E700C1FFCD /* arscan_flip@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08C209042073D2E600C1FFCD /* arscan_flip@2x.png */; };
-		08C2092E2076680900C1FFCD /* KJARLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08C2092D2076680900C1FFCD /* KJARLib.framework */; };
-		08C2092F2076692500C1FFCD /* KJARLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08C2092D2076680900C1FFCD /* KJARLib.framework */; };
-		08C209302076692500C1FFCD /* KJARLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 08C2092D2076680900C1FFCD /* KJARLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		08C70B831D0F94DD007E21D4 /* SubscribeListAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C70B821D0F94DD007E21D4 /* SubscribeListAPI.m */; };
 		08C70B861D0F9832007E21D4 /* SubscribeListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C70B851D0F9832007E21D4 /* SubscribeListModel.m */; };
 		08DAE6C71CC7536100C2274A /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08DAE6C61CC7536100C2274A /* AlipaySDK.framework */; };
@@ -467,7 +465,6 @@
 		12B30E111D082FD1003CD2C3 /* Function.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12B30E101D082FD1003CD2C3 /* Function.storyboard */; };
 		12B30E141D082FE9003CD2C3 /* function-module.m in Sources */ = {isa = PBXBuildFile; fileRef = 12B30E131D082FE9003CD2C3 /* function-module.m */; };
 		12B30E171D08302D003CD2C3 /* EntranceGuardController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12B30E161D08302D003CD2C3 /* EntranceGuardController.m */; };
-		12B30E1A1D08305B003CD2C3 /* NoticeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12B30E191D08305B003CD2C3 /* NoticeViewController.m */; };
 		12B30E1D1D083068003CD2C3 /* MoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12B30E1C1D083068003CD2C3 /* MoreViewController.m */; };
 		12BA334C1E0B77C100A9ECC3 /* libPods-EstateBiz.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 12BA33491E0B77C100A9ECC3 /* libPods-EstateBiz.a */; };
 		12DB16571D01167000AE0206 /* ViewPagerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12DB16561D01167000AE0206 /* ViewPagerController.m */; };
@@ -657,7 +654,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				08C209302076692500C1FFCD /* KJARLib.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -696,9 +692,6 @@
 		047406041D2659440007BAA0 /* SelectCommunityController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectCommunityController.xib; sourceTree = "<group>"; };
 		047406071D265BE10007BAA0 /* SelectCommunityAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectCommunityAPI.h; sourceTree = "<group>"; };
 		047406081D265BE10007BAA0 /* SelectCommunityAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectCommunityAPI.m; sourceTree = "<group>"; };
-		047406141D265E350007BAA0 /* NoticeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NoticeCell.h; path = EstateBiz/UI/Controller/Function/views/NoticeCell.h; sourceTree = SOURCE_ROOT; };
-		047406151D265E350007BAA0 /* NoticeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NoticeCell.m; path = EstateBiz/UI/Controller/Function/views/NoticeCell.m; sourceTree = SOURCE_ROOT; };
-		047406161D265E350007BAA0 /* NoticeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NoticeCell.xib; path = EstateBiz/UI/Controller/Function/views/NoticeCell.xib; sourceTree = SOURCE_ROOT; };
 		0474061A1D265F840007BAA0 /* GetNoticeListAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetNoticeListAPI.h; sourceTree = "<group>"; };
 		0474061B1D265F840007BAA0 /* GetNoticeListAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetNoticeListAPI.m; sourceTree = "<group>"; };
 		0474061D1D26625B0007BAA0 /* NoticeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoticeModel.h; sourceTree = "<group>"; };
@@ -881,6 +874,11 @@
 		08816FE31D1385C70003DA9A /* WeatherAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherAPI.h; sourceTree = "<group>"; };
 		08816FE41D1385C70003DA9A /* WeatherAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherAPI.m; sourceTree = "<group>"; };
 		08816FE61D13A2050003DA9A /* WeatherView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeatherView.xib; sourceTree = "<group>"; };
+		08A3A3A121BD60CD008E071F /* NoticeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoticeCell.h; sourceTree = "<group>"; };
+		08A3A3A221BD60CD008E071F /* NoticeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoticeViewController.h; sourceTree = "<group>"; };
+		08A3A3A321BD60CD008E071F /* NoticeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoticeCell.xib; sourceTree = "<group>"; };
+		08A3A3A421BD60CD008E071F /* NoticeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoticeCell.m; sourceTree = "<group>"; };
+		08A3A3A521BD60CD008E071F /* NoticeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoticeViewController.m; sourceTree = "<group>"; };
 		08B2F2191D114CCE00195BA3 /* CardTransactionAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardTransactionAPI.h; sourceTree = "<group>"; };
 		08B2F21A1D114CCE00195BA3 /* CardTransactionAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardTransactionAPI.m; sourceTree = "<group>"; };
 		08B2F21C1D114E8900195BA3 /* CardTransactionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardTransactionModel.h; sourceTree = "<group>"; };
@@ -1510,8 +1508,6 @@
 		12B30E131D082FE9003CD2C3 /* function-module.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "function-module.m"; sourceTree = "<group>"; };
 		12B30E151D08302D003CD2C3 /* EntranceGuardController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EntranceGuardController.h; path = EstateBiz/UI/Controller/Function/views/EntranceGuardController.h; sourceTree = SOURCE_ROOT; };
 		12B30E161D08302D003CD2C3 /* EntranceGuardController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EntranceGuardController.m; path = EstateBiz/UI/Controller/Function/views/EntranceGuardController.m; sourceTree = SOURCE_ROOT; };
-		12B30E181D08305B003CD2C3 /* NoticeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NoticeViewController.h; path = EstateBiz/UI/Controller/Function/views/NoticeViewController.h; sourceTree = SOURCE_ROOT; };
-		12B30E191D08305B003CD2C3 /* NoticeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NoticeViewController.m; path = EstateBiz/UI/Controller/Function/views/NoticeViewController.m; sourceTree = SOURCE_ROOT; };
 		12B30E1B1D083068003CD2C3 /* MoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MoreViewController.h; path = EstateBiz/UI/Controller/Function/views/MoreViewController.h; sourceTree = SOURCE_ROOT; };
 		12B30E1C1D083068003CD2C3 /* MoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MoreViewController.m; path = EstateBiz/UI/Controller/Function/views/MoreViewController.m; sourceTree = SOURCE_ROOT; };
 		12BA33491E0B77C100A9ECC3 /* libPods-EstateBiz.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libPods-EstateBiz.a"; sourceTree = "<group>"; };
@@ -1807,7 +1803,6 @@
 				08DAE78E1CC75BCA00C2274A /* SMSConnection.framework in Frameworks */,
 				08DAE79B1CC75BCA00C2274A /* ShareSDKFlatShareViewUI.framework in Frameworks */,
 				D944CDCE1BD764040082F8D3 /* CoreMedia.framework in Frameworks */,
-				08C2092F2076692500C1FFCD /* KJARLib.framework in Frameworks */,
 				D944CDCC1BD763FD0082F8D3 /* CoreLocation.framework in Frameworks */,
 				D944CDCA1BD763EA0082F8D3 /* Security.framework in Frameworks */,
 				08DAE7991CC75BCA00C2274A /* ShareSDK.framework in Frameworks */,
@@ -1815,7 +1810,6 @@
 				D944CDC61BD763D60082F8D3 /* MessageUI.framework in Frameworks */,
 				D944CDC41BD763D00082F8D3 /* MapKit.framework in Frameworks */,
 				08DAE7921CC75BCA00C2274A /* MOBFoundation.framework in Frameworks */,
-				08C2092E2076680900C1FFCD /* KJARLib.framework in Frameworks */,
 				D944CDC21BD763C90082F8D3 /* QuartzCore.framework in Frameworks */,
 				08DAE7971CC75BCA00C2274A /* libWeiboSDK.a in Frameworks */,
 				D944CDC01BD763C10082F8D3 /* AudioToolbox.framework in Frameworks */,
@@ -2171,6 +2165,18 @@
 				08BDC3271D13E9A0005BBF74 /* MsgAdViewController.xib */,
 			);
 			path = WeatherView;
+			sourceTree = "<group>";
+		};
+		08A3A3A021BD60CD008E071F /* Notice */ = {
+			isa = PBXGroup;
+			children = (
+				08A3A3A121BD60CD008E071F /* NoticeCell.h */,
+				08A3A3A221BD60CD008E071F /* NoticeViewController.h */,
+				08A3A3A321BD60CD008E071F /* NoticeCell.xib */,
+				08A3A3A421BD60CD008E071F /* NoticeCell.m */,
+				08A3A3A521BD60CD008E071F /* NoticeViewController.m */,
+			);
+			path = Notice;
 			sourceTree = "<group>";
 		};
 		08C208E12073D28E00C1FFCD /* G2AR */ = {
@@ -3263,18 +3269,6 @@
 			path = MoreView;
 			sourceTree = "<group>";
 		};
-		128B8E801D0CFEF3005A945A /* Notice */ = {
-			isa = PBXGroup;
-			children = (
-				047406141D265E350007BAA0 /* NoticeCell.h */,
-				047406151D265E350007BAA0 /* NoticeCell.m */,
-				047406161D265E350007BAA0 /* NoticeCell.xib */,
-				12B30E181D08305B003CD2C3 /* NoticeViewController.h */,
-				12B30E191D08305B003CD2C3 /* NoticeViewController.m */,
-			);
-			path = Notice;
-			sourceTree = "<group>";
-		};
 		128B8E811D0D014D005A945A /* ComingSoon */ = {
 			isa = PBXGroup;
 			children = (
@@ -3681,7 +3675,7 @@
 				128B8E811D0D014D005A945A /* ComingSoon */,
 				128B8E7E1D0CFEF3005A945A /* EntranceGuard */,
 				128B8E7F1D0CFEF3005A945A /* MoreView */,
-				128B8E801D0CFEF3005A945A /* Notice */,
+				08A3A3A021BD60CD008E071F /* Notice */,
 				12B30E101D082FD1003CD2C3 /* Function.storyboard */,
 			);
 			path = views;
@@ -4531,6 +4525,7 @@
 				0841EB491D0FE74100A80673 /* VoucherHeaderView.xib in Resources */,
 				0841EB471D0FE74100A80673 /* VoucherDetailCell.xib in Resources */,
 				08C209122073D2E700C1FFCD /* loader_spinner0000.png in Resources */,
+				08A3A3A621BD60CD008E071F /* NoticeCell.xib in Resources */,
 				08459C8F1CCA0C4D0015B73C /* MoreMenuCell.xib in Resources */,
 				08C209162073D2E700C1FFCD /* loader_spinner0017.png in Resources */,
 				128B8EB21D0D4F59005A945A /* EntranceGuard.storyboard in Resources */,
@@ -4539,7 +4534,6 @@
 				087F55511D0E59BA0010EDFF /* CardPointTableViewCell.xib in Resources */,
 				1246E6281CC4DDD200A3CE20 /* Home.xcassets in Resources */,
 				12541C0D1D1281F300067696 /* PayOrderCell.xib in Resources */,
-				047406181D265E350007BAA0 /* NoticeCell.xib in Resources */,
 				128B8E941D0D4E91005A945A /* ApplyCell.xib in Resources */,
 				047405E41D2649100007BAA0 /* GotoActivityController.xib in Resources */,
 				08DAE7961CC75BCA00C2274A /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
@@ -4682,6 +4676,7 @@
 				1239ECFD1CF5A84100A130F2 /* UITableView+QuickReusing.m in Sources */,
 				12F9EF171E24D903007A9DCB /* ApplyComplaintAPI.m in Sources */,
 				083FE50C1D127F53006B71D8 /* CardOrderListAPI.m in Sources */,
+				08A3A3A821BD60CD008E071F /* NoticeViewController.m in Sources */,
 				1252544A1CF439450066172A /* UITableView+RemoveExcessLine.m in Sources */,
 				087F54FA1D0E59250010EDFF /* SubscribeMerchantViewController.m in Sources */,
 				04828E7E1D2BB08700DCF13C /* OpenMoneyView.m in Sources */,
@@ -4771,7 +4766,6 @@
 				1239ECFF1CF5A84100A130F2 /* UIView+Recursion.m in Sources */,
 				0800006B1DFA953900AB34C2 /* Reachability.m in Sources */,
 				12A65E801CFD2D7800351625 /* README.md in Sources */,
-				12B30E1A1D08305B003CD2C3 /* NoticeViewController.m in Sources */,
 				04828E621D2B889700DCF13C /* CheckDeviceAPI.m in Sources */,
 				08B2F2241D115A1A00195BA3 /* CardTransactionDetailModel.m in Sources */,
 				1239ECEB1CF5A84100A130F2 /* NSString+FishKit.m in Sources */,
@@ -4854,7 +4848,6 @@
 				12411DA31CF8222700C50B45 /* SBNavigationController.m in Sources */,
 				12FF89D61D06A76B00DD8116 /* ServiceCollectionViewCell.m in Sources */,
 				12A65E7F1CFD2D7800351625 /* BaiduLocation.m in Sources */,
-				047406171D265E350007BAA0 /* NoticeCell.m in Sources */,
 				1239ECF41CF5A84100A130F2 /* UITableViewCell+NibStyle.m in Sources */,
 				12541C301D12B00700067696 /* UpdateUserIconAPI.m in Sources */,
 				08C70B831D0F94DD007E21D4 /* SubscribeListAPI.m in Sources */,
@@ -4940,6 +4933,7 @@
 				087F55521D0E59BA0010EDFF /* CardPromotionTableViewCell.m in Sources */,
 				1239ECF91CF5A84100A130F2 /* UIImage+FishKit.m in Sources */,
 				12A3E8D71D179BE9007297DF /* UIViewController+TableView.m in Sources */,
+				08A3A3A721BD60CD008E071F /* NoticeCell.m in Sources */,
 				08DAE7271CC753C500C2274A /* DataSigner.m in Sources */,
 				D944CDA71BD7634B0082F8D3 /* ISNull.m in Sources */,
 				D9EB44811BD61DC30034A3A4 /* main.m in Sources */,
